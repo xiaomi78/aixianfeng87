@@ -32,5 +32,5 @@ export default {
   overflow: hidden;
 }
 
-#app{height: 90%;width: 100%;background: #F2F5F8;}
+#app-view{height: 90%;width: 100%;background: #F2F5F8;}
 </style>
