@@ -13,7 +13,7 @@
     name: 'fenlei',
     components:{
       Search,Tab,FeiLeiBody
-    },
+    }
   }
 </script>
 <style>

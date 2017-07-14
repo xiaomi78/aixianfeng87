@@ -1,26 +1,28 @@
 <template>
   <div id="mine">
     <div id="mine-head">
-      <p @click="send1"><router-link to="/shopcar"><img src="../img/04.png" alt=""></router-link></p>
+      <p><router-link to="/shopcar"><img src="../img/04.png" alt=""></router-link></p>
       <p>登陆-美丽说</p>
       <p>注册</p>
     </div>
-    <h2>我是mine</h2>
+    <Tab></Tab>
   </div>
 </template>
 <script>
+  import Tab from  '../components/table'
   export default {
     name: 'mine',
     data(){
       return {
-        msg:true
+
       }
     },
     methods:{
-      send1:function(){
-        localStorage.setItem('tabShow','show');
-      }
-    }
+
+    },
+    components:{
+      Tab
+    },
   }
 </script>
 <style scoped>

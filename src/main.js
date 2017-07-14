@@ -9,6 +9,9 @@ import Home from './views/home'
 import FenLei from './views/fenlei'
 import Mine from './views/mine'
 import ShopCar from './views/shopcar'
+import Skrt from './components/skrt'
+import Xiang from './components/xiang'
+import Sousuo from './components/sousuo'
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
@@ -21,6 +24,9 @@ const  routes =[
   {path:'/mine',component:Mine},
   {path:'/shopcar',component:ShopCar},
   {path:'/home',component:Home},
+  {path:'/skrt',component:Skrt},
+  {path:'/xiang',component:Xiang},
+  {path:'/sousuo',component:Sousuo},
 
 ];
 const  router = new VueRouter({

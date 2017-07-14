@@ -27,8 +27,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  width:100%;height:100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-#app-view{height: 90%;width: 100%;background: #F2F5F8;}
+#app{height: 90%;width: 100%;background: #F2F5F8;}
 </style>
