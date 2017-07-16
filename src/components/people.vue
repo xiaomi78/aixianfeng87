@@ -33,15 +33,15 @@
             <p>0</p>
             <p>全部订单</p>
           </router-link>
-          <router-link to="/people/message">
+          <router-link to="/people/message1">
             <p>0</p>
             <p>待付款</p>
           </router-link>
-          <router-link to="/people/message">
+          <router-link to="/people/message2">
             <p>0</p>
             <p>优惠券</p>
           </router-link>
-          <router-link to="/people/message">
+          <router-link to="/people/message3">
             <p>0</p>
             <p>待评价</p>
           </router-link>
@@ -77,7 +77,7 @@
   #people>div>ul{width: 100%;background: url("../img/07.jpg") no-repeat;background-size: cover;}
 
   #people>div>ul>li:first-of-type{width:100%;height: 1.2rem;display: flex;justify-content: center;align-items: center;padding: 1rem 0 .5rem 0;}
-  #people>div>ul>li:first-of-type>div{height: 1rem;width: 1rem;border-radius: 50%;background:yellow;}
+  #people>div>ul>li:first-of-type>div{height: 1rem;width: 1rem;border-radius: 50%;background:url("../img/1111.jpg") no-repeat;background-size: cover;}
   #people>div>ul>li:nth-of-type(2){font-size: .3rem;color:white;text-align: center;padding: .18rem 0;border-bottom: 1px solid  rgba(255,255,255,.5);}
   #people>div>ul>li:nth-of-type(3){width: 100%;display: flex;justify-content: space-between;}
   #people>div>ul>li:nth-of-type(3)>div{width: 25%;display: flex;font-size: .24rem;align-items: center;flex-wrap: wrap;padding: .4rem 0;}
@@ -93,6 +93,6 @@
   #status>div{width: 100%;display: flex;justify-content: space-between;}
   #status>div>a{width: 25%;display: flex;font-size: .24rem;align-items: center;flex-wrap: wrap;padding: .2rem 0;}
   #status>div>a>p{width: 100%;display: flex;justify-content: center;}
-  /*#status>div>.router-link-active{color:red;}*/
+  #status>div>.router-link-active{color:red;}
 
 </style>

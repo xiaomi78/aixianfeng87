@@ -16,6 +16,9 @@ import logon from './components/logon'
 import zhuce from './components/zhuce'
 import people from './components/people'
 import Message from './components/message'
+import Message1 from './components/message1'
+import Message2 from './components/message2'
+import Message3 from './components/message3'
 
 
 Vue.config.productionTip = false;
@@ -36,9 +39,29 @@ const  routes =[
   {path:'/zhuce',component:zhuce},
   {path:'/people',component:people,children:[
     {
+      path:'',
+      name: 'message',
+      component:Message
+    },
+    {
     path:'message',
       name: 'message',
       component:Message
+    },
+    {
+      path:'message1',
+      name: 'message1',
+      component:Message1
+    },
+    {
+      path:'message2',
+      name: 'message2',
+      component:Message2
+    },
+    {
+      path:'message3',
+      name: 'message3',
+      component:Message3
     }
 
     ]}
