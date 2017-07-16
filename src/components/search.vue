@@ -29,11 +29,14 @@
         this.$router.push({path: '/sousuo',query:{active:false }});
         this.active=false;
         this.active1=true;
-
+        localStorage.setItem("name",this.active);
+        localStorage.setItem("name1",this.active1);
       },
       fanhui:function () {
         this.active=true;
         this.active1=false;
+        localStorage.setItem("name",this.active);
+        localStorage.setItem("name1",this.active1);
       }
     }
   }

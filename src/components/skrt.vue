@@ -151,6 +151,7 @@
         this.ok = !this.ok
       },
       Sale: function () {
+        this.arry1 = this.arry2;
         this.ak = !this.ak;
         console.log(this.ak);
         if (this.ak) {
@@ -164,6 +165,7 @@
         }
       },
       hot: function () {
+        this.arry1 = this.arry2;
         this.ak = !this.ak;
         console.log(this.ak);
         if (this.ak) {
@@ -177,6 +179,7 @@
         }
       },
       price: function () {
+        this.arry1 = this.arry2;
         this.ak = !this.ak;
         if (this.ak) {
           this.arry1.sort(function (x, y) {
@@ -192,11 +195,8 @@
         this.arry1 = [];
         for (var i = 0; i < this.arry2.length; i++) {
           if (this.arry2[i].price.substring(1) - 0 < 30) {
-              if (this.arry2[i]=[]){
-                  break
-              }
-            this.arry1.push(this.arry2[i]);
 
+            this.arry1.push(this.arry2[i]);
           }
         } this.ak = !this.ak;
         if (this.ak) {
@@ -245,20 +245,23 @@
         }
       },
       num:function () {
-        this.num1 = this.$refs.input1.value;
-        this.num2 = this.$refs.input2.value;
+        this.num1 = this.$refs.input1.value-0;
+        this.num2 = this.$refs.input2.value-0;
         console.log(this.num1,this.num2);
         this.arry1 = [];
         for (var i = 0; i < this.arry2.length; i++) {
+
+
+
           if (this.arry2[i].price.substring(1)-0 > this.num1 && this.arry2[i].price.substring(1)-0 < this.num2) {
             this.arry1.push(this.arry2[i]);
           }
-          if (this.arry2[i].price.substring(1)-0 > this.num1 ) {
-            this.arry1.push(this.arry2[i]);
-          }
-          if (this.arry2[i].price.substring(1)-0 < this.num2&& this.num1=='') {
-            this.arry1.push(this.arry2[i]);
-          }
+//          if (this.arry2[i].price.substring(1)-0 > this.num1 ) {
+//            this.arry1.push(this.arry2[i]);
+//          }
+//          if (this.arry2[i].price.substring(1)-0 < this.num2&& this.num1=='') {
+//            this.arry1.push(this.arry2[i]);
+//          }
         }
       },
       clean:function () {
@@ -275,7 +278,6 @@
           });
         }
       }
-
   }
 </script>
 

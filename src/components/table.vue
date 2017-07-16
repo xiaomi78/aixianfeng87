@@ -4,7 +4,7 @@
       <li><router-link to="/home">首页</router-link></li>
       <li><router-link to="/fenlei">分类</router-link></li>
       <li><router-link to="/shopcar">购物车</router-link></li>
-      <li><router-link to="/mine">我的</router-link></li>
+      <li><a @click='mine'>我的</a></li>
     </ul>
   </div>
 </template>
@@ -17,8 +17,18 @@
 
       }
     },
-    mounted(){
-
+    methods:{
+      mine:function () {
+          if(localStorage.getItem("user")==undefined){
+            this.$router.push({path:'/logon'});
+          }
+        if(localStorage.getItem("user")=="false"){
+          this.$router.push({path:'/zhuce'});
+        }
+        if(localStorage.getItem("user")=="true"){
+          this.$router.push({path:'/people'});
+        }
+      }
     }
   }
 </script>

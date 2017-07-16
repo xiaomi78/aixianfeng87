@@ -12,6 +12,11 @@ import ShopCar from './views/shopcar'
 import Skrt from './components/skrt'
 import Xiang from './components/xiang'
 import Sousuo from './components/sousuo'
+import logon from './components/logon'
+import zhuce from './components/zhuce'
+import people from './components/people'
+import Message from './components/message'
+
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
@@ -27,6 +32,16 @@ const  routes =[
   {path:'/skrt',component:Skrt},
   {path:'/xiang',component:Xiang},
   {path:'/sousuo',component:Sousuo},
+  {path:'/logon',component:logon},
+  {path:'/zhuce',component:zhuce},
+  {path:'/people',component:people,children:[
+    {
+    path:'message',
+      name: 'message',
+      component:Message
+    }
+
+    ]}
 
 ];
 const  router = new VueRouter({

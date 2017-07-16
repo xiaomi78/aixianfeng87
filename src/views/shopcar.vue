@@ -1,7 +1,7 @@
 <template>
   <div id="shopcar">
     <div id="shopcar-head">
-      <p><img src="../img/04.png" alt=""></p>
+      <p @click="back"><img src="../img/04.png" alt=""></p>
       <p>购物车</p>
       <p><router-link to="/home">首页</router-link></p>
     </div>
@@ -15,6 +15,11 @@
     name: 'shopcar',
     components:{
      Tab
+    },
+    methods: {
+      back:function () {
+        window.history.go(-1);
+      }
     }
   }
 </script>

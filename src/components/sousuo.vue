@@ -18,11 +18,14 @@
     },
     data(){
       return {
-
+        active:true,
+        active1:false
       }
     },
     mounted(){
-
+      this.active= localStorage.getItem("name");
+      this.active1=localStorage.getItem("name1");
+      console.log(this.active, this.active1)
     },
     methods:{
 
