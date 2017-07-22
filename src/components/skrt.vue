@@ -274,7 +274,7 @@
             this.active="block",
             this.arry1 = res.body.data.list;
             this.arry2 = res.body.data.list;
-            console.log(res.body.data.list);
+           /* console.log(res.body.data.list);*/
           });
         }
       }

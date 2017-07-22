@@ -1,7 +1,7 @@
 <template>
   <div id="people">
     <ul>
-      <li><p @click="back"><img src="../img/04.png" alt=""></p><p>个人中心</p><p>退出</p></li>
+      <li><p @click="back"><img src="../img/04.png" alt=""></p><p>个人中心</p><p @click="tuichu">退出</p></li>
     </ul>
     <div>
       <ul>
@@ -62,6 +62,10 @@
     methods: {
       back:function () {
         window.history.go(-1);
+      },
+      tuichu:function () {
+        localStorage.removeItem("user");//清除user的值
+        this.$router.push({path:'/home'});
       }
     }
   }
